@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "resonance-capture"
+version = "0.1.0"
+description = ""
+authors = ["puresox <puresox@163.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.11"
+opencv-python = "*"
+uiautomator2 = "*"
+mitmproxy = "^10.2.3"
+
+[tool.poetry.group.dev.dependencies]
+black = "*"
+flake8 = "*"
+mypy = "*"
+isort = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[[tool.poetry.source]]
+name = "tsinghua"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+priority = "primary"
