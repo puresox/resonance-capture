@@ -1,8 +1,6 @@
 import cv2
 import numpy as np
 
-# http://doc.autoxjs.com/#/images
-
 
 def findColor(
     img,
