@@ -7,16 +7,22 @@ readme = "README.md"
 package-mode = false
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = ">=3.11,<3.12"
 opencv-python = "*"
 uiautomator2 = "*"
 mitmproxy = "^10.2.3"
+rapidocr-onnxruntime = "^1.3.15"
 
 [tool.poetry.group.dev.dependencies]
 black = "*"
 flake8 = "*"
 mypy = "*"
 isort = "*"
+
+[tool.poetry.group.exe.dependencies]
+nuitka = "*"
+ordered-set = "*"
+zstandard = "*"
 
 [build-system]
 requires = ["poetry-core"]
